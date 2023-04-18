@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 playerMovementInput;
 
+
     float moveX;
     float moveY;
     public bool IsGrounded;
@@ -35,8 +36,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 PlayerInputV3 = new Vector3(moveY, 0f, moveX);
         playerMovementInput = PlayerInputV3 * PlayerSesitivity;
-
-        Debug.Log(PlayerInputV3);
 
         float MouseX = Input.GetAxis("Mouse X") * Time.deltaTime * (100 * MouseSesitivity);
         float MouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * (100 * MouseSesitivity);
