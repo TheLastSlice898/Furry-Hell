@@ -4,19 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EventBus : MonoBehaviour
-    
+
 {
     private static EventBus _current;
-    public static EventBus current {  get { return _current; } }
-    // Start is called before the first frame update
     private int Lives = 3;
+    public static EventBus current { get { return _current; } }
+    // Start is called before the first frame update
     public string name = "Cumslor";
-    
 
-        //fuction to lower Lives
+
+    //fuction to lower Lives
     public void LowerLife()
     {
-        Lives = Lives -1;
+        Lives = Lives - 1;
         Debug.Log(Lives);
     }
 
@@ -35,13 +35,13 @@ public class EventBus : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public event Action Poggers;
 
@@ -50,16 +50,21 @@ public class EventBus : MonoBehaviour
         Poggers();
     }
 
-     public event Action LightGoOn;
-    
+    public event Action LightGoOn;
+
     public void LightGoOnTrigger()
     {
         LightGoOn();
     }
-     public event Action LightGoOff;
-    
+    public event Action LightGoOff;
+
     public void LightGoOffTrigger()
     {
         LightGoOff();
+    }
+
+    public int LivesGet()
+    {
+        return Lives;
     }
 }

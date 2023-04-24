@@ -87,11 +87,12 @@ public class PlayerController : MonoBehaviour
         {
             Speed = 10;
         }
-
+        // if the player vecocity is lower than -6 set the bool to true
         if (playerBody.velocity.y < -6f)
         {
             IsFalling = true;
         }
+        //else set it back to false 
         else
         {
             IsFalling = false;

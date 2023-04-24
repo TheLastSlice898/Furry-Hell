@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class beathcolioishf : MonoBehaviour
 {
+    public GameManager gameManager;
     // Start is called before the first frame update
+
+    
     void Start()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene());
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter(Collision collision)

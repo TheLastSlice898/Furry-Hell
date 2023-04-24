@@ -51,7 +51,11 @@ public class CharacterAnimator : MonoBehaviour
         {
             PlayerAnimator.SetBool("Idle", true);
         }
+        else
+        {
+            PlayerAnimator.SetBool("Idle", false);
+        }
 
-        
+
     }
 }
