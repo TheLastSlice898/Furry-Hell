@@ -9,12 +9,14 @@ public class CameraPos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       CamHolder.transform.rotation = transform.rotation;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Makes the camera holder's postition and rotation the same as the one on the player every update
         transform.position = CamHolder.transform.position;
+        transform.rotation = CamHolder.transform.rotation;
     }
 }

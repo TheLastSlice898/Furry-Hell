@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 playerMovementInput;
 
+    public bool IsFalling;
 
     float moveX;
     float moveY;
@@ -87,11 +88,14 @@ public class PlayerController : MonoBehaviour
             Speed = 10;
         }
 
-        if (IsGrounded == false)
+        if (playerBody.velocity.y < -6f)
         {
-
+            IsFalling = true;
         }
-
+        else
+        {
+            IsFalling = false;
+        }
         //using the mouse to rotate the camera up and down
 
 
@@ -112,7 +116,7 @@ public class PlayerController : MonoBehaviour
         //Debug.DrawRay(Raycast.origin, Raycast.direction * 1);
     }
 
-void OnCollisionEnter(Collision Collider)
+    void OnCollisionEnter(Collision Collider)
     {
     if (Collider.gameObject.tag == "Floor")
         {
