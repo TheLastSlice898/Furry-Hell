@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonandTrigger : MonoBehaviour
+public class SwitchScript : MonoBehaviour
 {
 
     public bool IsPlayerTrigger;
@@ -11,9 +11,10 @@ public class ButtonandTrigger : MonoBehaviour
 
     public GameObject UI_Button;
 
-    public string Trigger;
+    public string SwitchName;
     public string Bool;
 
+    public bool SwitchMode;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,9 @@ public class ButtonandTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SwitchMode = ButtonAnimator.GetBool(Bool);
+
+        DoorAnimator.SetBool(SwitchName, SwitchMode);
         if (IsPlayerTrigger) 
         {
             if (Input.GetKeyDown("f"))
