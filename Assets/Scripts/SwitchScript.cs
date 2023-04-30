@@ -24,11 +24,13 @@ public class SwitchScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //get the bool from the animator
         SwitchMode = ButtonAnimator.GetBool(Bool);
-
+        //Set the bool on the animator to the bool 
         DoorAnimator.SetBool(SwitchName, SwitchMode);
         if (IsPlayerTrigger) 
         {
+            //if the player presses f then set the animator to oppisite of the bool
             if (Input.GetKeyDown("f"))
             {
                 ButtonAnimator.SetBool(Bool,!ButtonAnimator.GetBool(Bool));
@@ -40,6 +42,7 @@ public class SwitchScript : MonoBehaviour
 
     void OnTriggerStay(Collider Trigger)
     {
+        //toggles the ui on
         if (Trigger.gameObject.name == "Player")
         {
             UI_Button.SetActive(true);
@@ -48,6 +51,7 @@ public class SwitchScript : MonoBehaviour
     }
     void OnTriggerExit(Collider Trigger)
     {
+        //toggles the ui off
         IsPlayerTrigger = false;
         UI_Button.SetActive(false);
     }

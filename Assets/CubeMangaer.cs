@@ -13,6 +13,7 @@ public class CubeMangaer : MonoBehaviour
     }
 
     // Update is called once per frame
+    //aaaaaaaaaaaaaaaaaaaa
     //void Update()
     //{
     //    bool Swithcmode = gameObject.GetComponent<SwitchScript1>().SwitchMode;

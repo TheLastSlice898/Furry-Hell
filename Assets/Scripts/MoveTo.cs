@@ -15,7 +15,8 @@ public class MoveTo : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        //get the agent and make the destination the goal position. 
         NavMeshAgent agent = gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
         agent.destination = goal.position;
     }

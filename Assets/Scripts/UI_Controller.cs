@@ -16,6 +16,7 @@ public class UI_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //sets the lives counter to the lives on the event bus
         lives = EventBus.Current.LivesGet();
         LivesCounter.text = lives.ToString();
     }

@@ -7,6 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //hehe cumsulor
         print(EventBus.Current.name);
     }
 

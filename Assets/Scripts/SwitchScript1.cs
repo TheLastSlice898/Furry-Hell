@@ -20,6 +20,7 @@ public class SwitchScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //This makes a local variable for the animator bool 
         SwitchMode = ButtonAnimator.GetBool(Bool);
         if (IsPlayerTrigger) 
         {
@@ -36,12 +37,14 @@ public class SwitchScript1 : MonoBehaviour
     {
         if (Trigger.gameObject.name == "Player")
         {
+            //toggles the ui on
             UI_Button.SetActive(true);
             IsPlayerTrigger = true;
         }
     }
     void OnTriggerExit(Collider Trigger)
     {
+        //toggles the ui off
         IsPlayerTrigger = false;
         UI_Button.SetActive(false);
     }

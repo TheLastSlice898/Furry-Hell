@@ -5,6 +5,8 @@ using UnityEngine;
 public class CubeController : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    //EVENT BUS's ARE HARD!
     void Start()
     {
         EventBus.Current.CubeGoOff += CubeOff;

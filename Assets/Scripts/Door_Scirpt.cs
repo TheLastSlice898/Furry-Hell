@@ -17,7 +17,7 @@ public class Door_Scirpt : MonoBehaviour
     void Update()
     {
         Animator DoorAnimator = gameObject.GetComponent<Animator>();
-
+        //this was supposed to be the script for a maze idea
         Left = DoorAnimator.GetBool("Switch Left");
         Middle = DoorAnimator.GetBool("Switch Middle");
         Right = DoorAnimator.GetBool("Switch Right");

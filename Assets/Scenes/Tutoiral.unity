@@ -505,7 +505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -711,10 +711,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2448118840200954705, guid: a70dfd0480f969d4fb407ea4e76b0211, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 7da0f2b652ab76d419648a7dad43edec, type: 2}
     - target: {fileID: 2448118840200954706, guid: a70dfd0480f969d4fb407ea4e76b0211, type: 3}
       propertyPath: PlayerCamera
       value: 

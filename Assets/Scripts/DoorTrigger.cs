@@ -26,6 +26,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (DoorTrigger.gameObject.name == "Player")
         {
+            //if the player is next to door open and close!
             if (m_Animator.GetBool("OPEN"))
             {
                 m_Animator.SetBool("OPEN", false);

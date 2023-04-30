@@ -12,6 +12,9 @@ public class psydocode : MonoBehaviour
 }
 
 /*
+This is all the phyduocode for the first level/Tutorial scene.
+
+
 Death Script        
 
 When the player collides with the death pit 
