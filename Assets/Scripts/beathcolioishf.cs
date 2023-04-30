@@ -28,7 +28,7 @@ public class beathcolioishf : MonoBehaviour
             //loads the current scene bu getting the active scene and loading it. 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //uses the event bus to lower the life of the player by 1
-            EventBus.current.LowerLife();
+            EventBus.Current.LowerLife();
         }
     }
 }

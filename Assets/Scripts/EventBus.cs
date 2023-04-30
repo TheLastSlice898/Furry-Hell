@@ -9,7 +9,7 @@ public class EventBus : MonoBehaviour
 {
     private static EventBus _current;
     private int Lives = 3;
-    public static EventBus current { get { return _current; } }
+    public static EventBus Current { get { return _current; } }
     // Start is called before the first frame update
     public string name = "Cumslor";
 
@@ -64,7 +64,6 @@ public class EventBus : MonoBehaviour
         CubeGoOn();
     }
     public event Action CubeGoOff;
-
     public void CubeGoOffTrigger()
     {
         CubeGoOff();
