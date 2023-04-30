@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public bool IsFalling;
 
-    float moveX;
-    float moveY;
+    public float moveX;
+    public float moveY;
     public bool IsGrounded;
     public bool DoubleJump;
 

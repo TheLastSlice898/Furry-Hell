@@ -1156,7 +1156,7 @@ Transform:
   m_GameObject: {fileID: 1241675023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7754, y: 3.7754, z: 3.7754}
+  m_LocalScale: {x: 1.3996917, y: 3.7754, z: 3.7754}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 29477668}
@@ -1444,6 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02ae22a880751e43ad5daff21aeb2ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &1885733910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,6 +1579,9 @@ MonoBehaviour:
   MaxSpeed: 15
   playerBody: {fileID: 1993957157}
   PlayerCamera: {fileID: 1655037830}
+  IsFalling: 0
+  moveX: 0
+  moveY: 0
   IsGrounded: 1
   DoubleJump: 0
 --- !u!54 &1993957157
