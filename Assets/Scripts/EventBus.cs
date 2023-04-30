@@ -61,7 +61,7 @@ public class EventBus : MonoBehaviour
 
     public void CubeGoOnTrigger()
     {
-        CubeGoOn();
+        CubeGoOn.Invoke();
     }
     public event Action CubeGoOff;
     public void CubeGoOffTrigger()

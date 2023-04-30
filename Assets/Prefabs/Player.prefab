@@ -90,7 +90,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2448118840200954709}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7da0f2b652ab76d419648a7dad43edec, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.36857206
@@ -118,6 +118,8 @@ MonoBehaviour:
   playerBody: {fileID: 2448118840200954707}
   PlayerCamera: {fileID: 0}
   IsFalling: 0
+  moveX: 0
+  moveY: 0
   IsGrounded: 1
   DoubleJump: 0
 --- !u!1001 &2448118840782191262
@@ -227,6 +229,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sergal
       objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 71b12757eb6367a4b846b1cd548f3279, type: 2}
+    - target: {fileID: 1630794972795428178, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f52c0f653cda17942ba9fa54fe8d72e8, type: 2}
+    - target: {fileID: 1630794972795428178, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33bfc366299589c4b9e26bf6a54e0390, type: 2}
+    - target: {fileID: 1630794972795428178, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1afd9e07232adf6419b36903d3c9d4ba, type: 2}
+    - target: {fileID: 1630794972795428178, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74cbb470e81844a4583576fa769cce4d, type: 2}
     - target: {fileID: 5866666021909216657, guid: 8b24e396d7ab9b347a940595566679df, type: 3}
       propertyPath: m_Controller
       value: 

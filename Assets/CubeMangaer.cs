@@ -9,26 +9,26 @@ public class CubeMangaer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        EventBus.Current.CubeGoOnTrigger();  
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        bool Swithcmode = gameObject.GetComponent<SwitchScript1>().SwitchMode;
-        if (!hasEvent)
-        {
-            if (Swithcmode)
-            {
-                EventBus.Current.CubeGoOnTrigger();
-                hasEvent = true;
-            }
-            if (!Swithcmode)
-            {
-                EventBus.Current.CubeGoOffTrigger();
-                hasEvent = false;
-            }
-        }
-
-    }
+    //void Update()
+    //{
+    //    bool Swithcmode = gameObject.GetComponent<SwitchScript1>().SwitchMode;
+    //    if (!hasEvent)
+    //    {
+    //        if (Swithcmode)
+    //        {
+    //            
+    //            hasEvent = true;
+    //        }
+    //        if (!Swithcmode)
+    //        {
+    //            EventBus.Current.CubeGoOffTrigger();
+    //            hasEvent = false;
+    //        }
+    //    }
+    //
+    //}
 }
