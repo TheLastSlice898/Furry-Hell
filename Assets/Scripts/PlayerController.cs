@@ -102,6 +102,8 @@ public class PlayerController : MonoBehaviour
 
         //run move player function every frame hmm
 
+        //Tried to make a Ground fuction from a raycast but collission was more accurate and easier to impulemt 
+
         // im so dumb TWT (COULD BE USED AS GUN OWO)
         //Ray Raycast = new Ray (playerBody.transform.position, -playerBody.transform.up);
         //Physics.Raycast(playerBody.transform.position, -playerBody.transform.up, Mathf.Infinity);

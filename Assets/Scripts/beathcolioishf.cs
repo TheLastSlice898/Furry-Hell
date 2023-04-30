@@ -25,7 +25,9 @@ public class beathcolioishf : MonoBehaviour
         Debug.Log("Fuck");
         if (collision.gameObject.tag == "Player")
         {
+            //loads the current scene bu getting the active scene and loading it. 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //uses the event bus to lower the life of the player by 1
             EventBus.current.LowerLife();
         }
     }

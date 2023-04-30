@@ -7,7 +7,7 @@ public class ButtonandTrigger : MonoBehaviour
 
     public bool IsPlayerTrigger;
     public GameObject Pannel;
-
+    public AudioSource Audio;
     Animator PannelAnimator;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class ButtonandTrigger : MonoBehaviour
             if (IsPlayerTrigger)
             {
                 PannelAnimator.SetTrigger("Press Button");
+                Audio.Play();
             }
 
         }

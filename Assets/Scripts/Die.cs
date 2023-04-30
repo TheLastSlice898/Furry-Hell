@@ -21,6 +21,7 @@ public class Die : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            //Load the next scene when the player dies 
             Debug.Log("you died");
             SceneManager.LoadScene(1);
         }

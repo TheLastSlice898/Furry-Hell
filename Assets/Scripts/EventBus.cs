@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventBus : MonoBehaviour
 
@@ -18,6 +19,12 @@ public class EventBus : MonoBehaviour
     {
         Lives = Lives - 1;
         Debug.Log(Lives);
+
+        if (Lives < 0)
+        {
+            SceneManager.LoadScene(0);
+            Lives = 3;
+        }
     }
 
     private void Awake()
@@ -50,21 +57,23 @@ public class EventBus : MonoBehaviour
         Poggers();
     }
 
-    public event Action LightGoOn;
+    public event Action CubeGoOn;
 
-    public void LightGoOnTrigger()
+    public void CubeGoOnTrigger()
     {
-        LightGoOn();
+        CubeGoOn();
     }
-    public event Action LightGoOff;
+    public event Action CubeGoOff;
 
-    public void LightGoOffTrigger()
+    public void CubeGoOffTrigger()
     {
-        LightGoOff();
+        CubeGoOff();
     }
 
     public int LivesGet()
     {
         return Lives;
     }
+
+
 }
